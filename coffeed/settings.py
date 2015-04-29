@@ -118,3 +118,8 @@ STATICFILES_DIRS = (
     )
 
 STATIC_ROOT = 'staticfiles'
+
+# Simplified static file serving.
+# https://warehouse.python.org/project/whitenoise/
+
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
